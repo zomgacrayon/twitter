@@ -1,0 +1,19 @@
+<div class="container">
+<h1><%=  "#{@user.username.capitalize}'s Twitter" %></h1>
+
+<a href="/users/<%=@user.id%>"> <%= "@#{@user.username}" %></a>
+
+<!-- insert timestamp -->
+
+<form method="get" action="/users/:id"></form>
+
+<table border=1>
+  <% if @user %>
+    <% @user.tweets.each do |tweet| %>
+      <p> <%= tweet.post %> </p>
+      <font size="2"><p> <%= tweet.created_at.strftime("%d %b %Y") %></p></font>
+    <% end %>
+  <% end %>
+</table>
+
+</div>

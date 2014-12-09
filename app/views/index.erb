@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="header">
+    <h1>Welcome to Twitter!</h1>
+    </p>Before we begin tweeting your life away, please log in or sign up!</p>
+  </div>
+
+<h2>Don't have an account? Sign up here!</h2>
+    <div>
+      <form action="/signup" method="post">
+       <tr><td>Username:</td>  <td><input type="text" name="user[username]"></td></tr>
+       <tr><td>Email:    <input type="text" name="user[email]"></br></td></tr>
+        <tr><td>Password:  <input type="password" name="user[password]"></br></td></tr>
+        <input type="submit" value="Sign up">
+      </form>
+    </div></br>
+
+    <h2>Sign in:</h2>
+    <div>
+      <form action="/login" method="post">
+        <input type="text" placeholder="username" name="username">
+        <input type="password" placeholder="password" name="password">
+        <input type="submit" value="Sign in">
+      </form>
+    </div></br>
+
+</div>
